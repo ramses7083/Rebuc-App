@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		256BFD8B1F9176E300D060B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256BFD8A1F9176E300D060B4 /* AppDelegate.swift */; };
+		256BFD8D1F9176E300D060B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256BFD8C1F9176E300D060B4 /* ViewController.swift */; };
+		256BFD901F9176E300D060B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 256BFD8E1F9176E300D060B4 /* Main.storyboard */; };
+		256BFD921F9176E300D060B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 256BFD911F9176E300D060B4 /* Assets.xcassets */; };
+		256BFD951F9176E300D060B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 256BFD931F9176E300D060B4 /* LaunchScreen.storyboard */; };
+		256BFDA01F9176E300D060B4 /* ReBUC_RamsesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256BFD9F1F9176E300D060B4 /* ReBUC_RamsesTests.swift */; };
+		256BFDAB1F9176E300D060B4 /* ReBUC_RamsesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256BFDAA1F9176E300D060B4 /* ReBUC_RamsesUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		256BFD9C1F9176E300D060B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 256BFD7F1F9176E200D060B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 256BFD861F9176E200D060B4;
+			remoteInfo = "ReBUC Ramses";
+		};
+		256BFDA71F9176E300D060B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 256BFD7F1F9176E200D060B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 256BFD861F9176E200D060B4;
+			remoteInfo = "ReBUC Ramses";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		256BFD871F9176E300D060B4 /* ReBUC Ramses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReBUC Ramses.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		256BFD8A1F9176E300D060B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		256BFD8C1F9176E300D060B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		256BFD8F1F9176E300D060B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		256BFD911F9176E300D060B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		256BFD941F9176E300D060B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		256BFD961F9176E300D060B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		256BFD9B1F9176E300D060B4 /* ReBUC RamsesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReBUC RamsesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		256BFD9F1F9176E300D060B4 /* ReBUC_RamsesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReBUC_RamsesTests.swift; sourceTree = "<group>"; };
+		256BFDA11F9176E300D060B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		256BFDA61F9176E300D060B4 /* ReBUC RamsesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReBUC RamsesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		256BFDAA1F9176E300D060B4 /* ReBUC_RamsesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReBUC_RamsesUITests.swift; sourceTree = "<group>"; };
+		256BFDAC1F9176E300D060B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		256BFD841F9176E200D060B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		256BFD981F9176E300D060B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		256BFDA31F9176E300D060B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		256BFD7E1F9176E200D060B4 = {
+			isa = PBXGroup;
+			children = (
+				256BFD891F9176E300D060B4 /* ReBUC Ramses */,
+				256BFD9E1F9176E300D060B4 /* ReBUC RamsesTests */,
+				256BFDA91F9176E300D060B4 /* ReBUC RamsesUITests */,
+				256BFD881F9176E300D060B4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		256BFD881F9176E300D060B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				256BFD871F9176E300D060B4 /* ReBUC Ramses.app */,
+				256BFD9B1F9176E300D060B4 /* ReBUC RamsesTests.xctest */,
+				256BFDA61F9176E300D060B4 /* ReBUC RamsesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		256BFD891F9176E300D060B4 /* ReBUC Ramses */ = {
+			isa = PBXGroup;
+			children = (
+				256BFD8A1F9176E300D060B4 /* AppDelegate.swift */,
+				256BFD8C1F9176E300D060B4 /* ViewController.swift */,
+				256BFD8E1F9176E300D060B4 /* Main.storyboard */,
+				256BFD911F9176E300D060B4 /* Assets.xcassets */,
+				256BFD931F9176E300D060B4 /* LaunchScreen.storyboard */,
+				256BFD961F9176E300D060B4 /* Info.plist */,
+			);
+			path = "ReBUC Ramses";
+			sourceTree = "<group>";
+		};
+		256BFD9E1F9176E300D060B4 /* ReBUC RamsesTests */ = {
+			isa = PBXGroup;
+			children = (
+				256BFD9F1F9176E300D060B4 /* ReBUC_RamsesTests.swift */,
+				256BFDA11F9176E300D060B4 /* Info.plist */,
+			);
+			path = "ReBUC RamsesTests";
+			sourceTree = "<group>";
+		};
+		256BFDA91F9176E300D060B4 /* ReBUC RamsesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				256BFDAA1F9176E300D060B4 /* ReBUC_RamsesUITests.swift */,
+				256BFDAC1F9176E300D060B4 /* Info.plist */,
+			);
+			path = "ReBUC RamsesUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		256BFD861F9176E200D060B4 /* ReBUC Ramses */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 256BFDAF1F9176E300D060B4 /* Build configuration list for PBXNativeTarget "ReBUC Ramses" */;
+			buildPhases = (
+				256BFD831F9176E200D060B4 /* Sources */,
+				256BFD841F9176E200D060B4 /* Frameworks */,
+				256BFD851F9176E200D060B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ReBUC Ramses";
+			productName = "ReBUC Ramses";
+			productReference = 256BFD871F9176E300D060B4 /* ReBUC Ramses.app */;
+			productType = "com.apple.product-type.application";
+		};
+		256BFD9A1F9176E300D060B4 /* ReBUC RamsesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 256BFDB21F9176E300D060B4 /* Build configuration list for PBXNativeTarget "ReBUC RamsesTests" */;
+			buildPhases = (
+				256BFD971F9176E300D060B4 /* Sources */,
+				256BFD981F9176E300D060B4 /* Frameworks */,
+				256BFD991F9176E300D060B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				256BFD9D1F9176E300D060B4 /* PBXTargetDependency */,
+			);
+			name = "ReBUC RamsesTests";
+			productName = "ReBUC RamsesTests";
+			productReference = 256BFD9B1F9176E300D060B4 /* ReBUC RamsesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		256BFDA51F9176E300D060B4 /* ReBUC RamsesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 256BFDB51F9176E300D060B4 /* Build configuration list for PBXNativeTarget "ReBUC RamsesUITests" */;
+			buildPhases = (
+				256BFDA21F9176E300D060B4 /* Sources */,
+				256BFDA31F9176E300D060B4 /* Frameworks */,
+				256BFDA41F9176E300D060B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				256BFDA81F9176E300D060B4 /* PBXTargetDependency */,
+			);
+			name = "ReBUC RamsesUITests";
+			productName = "ReBUC RamsesUITests";
+			productReference = 256BFDA61F9176E300D060B4 /* ReBUC RamsesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		256BFD7F1F9176E200D060B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Ramses Miramontes Meza";
+				TargetAttributes = {
+					256BFD861F9176E200D060B4 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					256BFD9A1F9176E300D060B4 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 256BFD861F9176E200D060B4;
+					};
+					256BFDA51F9176E300D060B4 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 256BFD861F9176E200D060B4;
+					};
+				};
+			};
+			buildConfigurationList = 256BFD821F9176E200D060B4 /* Build configuration list for PBXProject "ReBUC Ramses" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 256BFD7E1F9176E200D060B4;
+			productRefGroup = 256BFD881F9176E300D060B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				256BFD861F9176E200D060B4 /* ReBUC Ramses */,
+				256BFD9A1F9176E300D060B4 /* ReBUC RamsesTests */,
+				256BFDA51F9176E300D060B4 /* ReBUC RamsesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		256BFD851F9176E200D060B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				256BFD951F9176E300D060B4 /* LaunchScreen.storyboard in Resources */,
+				256BFD921F9176E300D060B4 /* Assets.xcassets in Resources */,
+				256BFD901F9176E300D060B4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		256BFD991F9176E300D060B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		256BFDA41F9176E300D060B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		256BFD831F9176E200D060B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				256BFD8D1F9176E300D060B4 /* ViewController.swift in Sources */,
+				256BFD8B1F9176E300D060B4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		256BFD971F9176E300D060B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				256BFDA01F9176E300D060B4 /* ReBUC_RamsesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		256BFDA21F9176E300D060B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				256BFDAB1F9176E300D060B4 /* ReBUC_RamsesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		256BFD9D1F9176E300D060B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 256BFD861F9176E200D060B4 /* ReBUC Ramses */;
+			targetProxy = 256BFD9C1F9176E300D060B4 /* PBXContainerItemProxy */;
+		};
+		256BFDA81F9176E300D060B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 256BFD861F9176E200D060B4 /* ReBUC Ramses */;
+			targetProxy = 256BFDA71F9176E300D060B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		256BFD8E1F9176E300D060B4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				256BFD8F1F9176E300D060B4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		256BFD931F9176E300D060B4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				256BFD941F9176E300D060B4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		256BFDAD1F9176E300D060B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		256BFDAE1F9176E300D060B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		256BFDB01F9176E300D060B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VKPMZ9YA7;
+				INFOPLIST_FILE = "ReBUC Ramses/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rasoft.ReBUC-Ramses";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		256BFDB11F9176E300D060B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VKPMZ9YA7;
+				INFOPLIST_FILE = "ReBUC Ramses/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rasoft.ReBUC-Ramses";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		256BFDB31F9176E300D060B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VKPMZ9YA7;
+				INFOPLIST_FILE = "ReBUC RamsesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rasoft.ReBUC-RamsesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReBUC Ramses.app/ReBUC Ramses";
+			};
+			name = Debug;
+		};
+		256BFDB41F9176E300D060B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VKPMZ9YA7;
+				INFOPLIST_FILE = "ReBUC RamsesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rasoft.ReBUC-RamsesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReBUC Ramses.app/ReBUC Ramses";
+			};
+			name = Release;
+		};
+		256BFDB61F9176E300D060B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VKPMZ9YA7;
+				INFOPLIST_FILE = "ReBUC RamsesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rasoft.ReBUC-RamsesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ReBUC Ramses";
+			};
+			name = Debug;
+		};
+		256BFDB71F9176E300D060B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VKPMZ9YA7;
+				INFOPLIST_FILE = "ReBUC RamsesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rasoft.ReBUC-RamsesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ReBUC Ramses";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		256BFD821F9176E200D060B4 /* Build configuration list for PBXProject "ReBUC Ramses" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				256BFDAD1F9176E300D060B4 /* Debug */,
+				256BFDAE1F9176E300D060B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		256BFDAF1F9176E300D060B4 /* Build configuration list for PBXNativeTarget "ReBUC Ramses" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				256BFDB01F9176E300D060B4 /* Debug */,
+				256BFDB11F9176E300D060B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		256BFDB21F9176E300D060B4 /* Build configuration list for PBXNativeTarget "ReBUC RamsesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				256BFDB31F9176E300D060B4 /* Debug */,
+				256BFDB41F9176E300D060B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		256BFDB51F9176E300D060B4 /* Build configuration list for PBXNativeTarget "ReBUC RamsesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				256BFDB61F9176E300D060B4 /* Debug */,
+				256BFDB71F9176E300D060B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 256BFD7F1F9176E200D060B4 /* Project object */;
+}
