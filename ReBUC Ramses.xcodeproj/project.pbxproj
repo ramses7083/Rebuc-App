@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		256BFD8B1F9176E300D060B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256BFD8A1F9176E300D060B4 /* AppDelegate.swift */; };
-		256BFD8D1F9176E300D060B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256BFD8C1F9176E300D060B4 /* ViewController.swift */; };
 		256BFD901F9176E300D060B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 256BFD8E1F9176E300D060B4 /* Main.storyboard */; };
 		256BFD921F9176E300D060B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 256BFD911F9176E300D060B4 /* Assets.xcassets */; };
 		256BFD951F9176E300D060B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 256BFD931F9176E300D060B4 /* LaunchScreen.storyboard */; };
 		256BFDA01F9176E300D060B4 /* ReBUC_RamsesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256BFD9F1F9176E300D060B4 /* ReBUC_RamsesTests.swift */; };
 		256BFDAB1F9176E300D060B4 /* ReBUC_RamsesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256BFDAA1F9176E300D060B4 /* ReBUC_RamsesUITests.swift */; };
+		2587E3451F9EA8AD0013328C /* UniverCrearTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2587E3441F9EA8AD0013328C /* UniverCrearTicketsViewController.swift */; };
+		2587E34F1F9EC62E0013328C /* UniverPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2587E34E1F9EC62E0013328C /* UniverPerfilViewController.swift */; };
+		25BA71471F97D5470023BED8 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25BA71391F97D53A0023BED8 /* SQLite.framework */; };
+		25BA71481F97D54B0023BED8 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25BA71391F97D53A0023BED8 /* SQLite.framework */; };
+		25BA71491F97D54B0023BED8 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 25BA71391F97D53A0023BED8 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		25BA714E1F97D7790023BED8 /* InicioDeSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BA714D1F97D7790023BED8 /* InicioDeSesionViewController.swift */; };
+		25BA71501F9804570023BED8 /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BA714F1F9804570023BED8 /* RegistroViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,12 +37,81 @@
 			remoteGlobalIDString = 256BFD861F9176E200D060B4;
 			remoteInfo = "ReBUC Ramses";
 		};
+		25BA71381F97D53A0023BED8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25BA712E1F97D53A0023BED8 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247AD31C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+		25BA713A1F97D53A0023BED8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25BA712E1F97D53A0023BED8 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247ADD1C3F04ED00AE3E12;
+			remoteInfo = "SQLiteTests iOS";
+		};
+		25BA713C1F97D53A0023BED8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25BA712E1F97D53A0023BED8 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B3C1C3F3ED000AE3E12;
+			remoteInfo = "SQLite Mac";
+		};
+		25BA713E1F97D53A0023BED8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25BA712E1F97D53A0023BED8 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B451C3F3ED000AE3E12;
+			remoteInfo = "SQLiteTests Mac";
+		};
+		25BA71401F97D53A0023BED8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25BA712E1F97D53A0023BED8 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E5A1C6BB0F50062603F;
+			remoteInfo = "SQLite tvOS";
+		};
+		25BA71421F97D53A0023BED8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25BA712E1F97D53A0023BED8 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E631C6BB0F60062603F;
+			remoteInfo = "SQLiteTests tvOS";
+		};
+		25BA71441F97D53A0023BED8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25BA712E1F97D53A0023BED8 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A121AC451CA35C79005A31D1;
+			remoteInfo = "SQLite watchOS";
+		};
+		25BA714A1F97D54B0023BED8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25BA712E1F97D53A0023BED8 /* SQLite.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EE247AD21C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		25BA714C1F97D54B0023BED8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				25BA71491F97D54B0023BED8 /* SQLite.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		256BFD871F9176E300D060B4 /* ReBUC Ramses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReBUC Ramses.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		256BFD8A1F9176E300D060B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		256BFD8C1F9176E300D060B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		256BFD8F1F9176E300D060B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		256BFD911F9176E300D060B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		256BFD941F9176E300D060B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +122,11 @@
 		256BFDA61F9176E300D060B4 /* ReBUC RamsesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReBUC RamsesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		256BFDAA1F9176E300D060B4 /* ReBUC_RamsesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReBUC_RamsesUITests.swift; sourceTree = "<group>"; };
 		256BFDAC1F9176E300D060B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2587E3441F9EA8AD0013328C /* UniverCrearTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniverCrearTicketsViewController.swift; sourceTree = "<group>"; };
+		2587E34E1F9EC62E0013328C /* UniverPerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniverPerfilViewController.swift; sourceTree = "<group>"; };
+		25BA712E1F97D53A0023BED8 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
+		25BA714D1F97D7790023BED8 /* InicioDeSesionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioDeSesionViewController.swift; sourceTree = "<group>"; };
+		25BA714F1F9804570023BED8 /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +134,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25BA71481F97D54B0023BED8 /* SQLite.framework in Frameworks */,
+				25BA71471F97D5470023BED8 /* SQLite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +163,8 @@
 				256BFD9E1F9176E300D060B4 /* ReBUC RamsesTests */,
 				256BFDA91F9176E300D060B4 /* ReBUC RamsesUITests */,
 				256BFD881F9176E300D060B4 /* Products */,
+				25BA712E1F97D53A0023BED8 /* SQLite.xcodeproj */,
+				25BA71461F97D5470023BED8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,7 +182,10 @@
 			isa = PBXGroup;
 			children = (
 				256BFD8A1F9176E300D060B4 /* AppDelegate.swift */,
-				256BFD8C1F9176E300D060B4 /* ViewController.swift */,
+				25BA714D1F97D7790023BED8 /* InicioDeSesionViewController.swift */,
+				25BA714F1F9804570023BED8 /* RegistroViewController.swift */,
+				2587E3441F9EA8AD0013328C /* UniverCrearTicketsViewController.swift */,
+				2587E34E1F9EC62E0013328C /* UniverPerfilViewController.swift */,
 				256BFD8E1F9176E300D060B4 /* Main.storyboard */,
 				256BFD911F9176E300D060B4 /* Assets.xcassets */,
 				256BFD931F9176E300D060B4 /* LaunchScreen.storyboard */,
@@ -125,6 +212,27 @@
 			path = "ReBUC RamsesUITests";
 			sourceTree = "<group>";
 		};
+		25BA712F1F97D53A0023BED8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25BA71391F97D53A0023BED8 /* SQLite.framework */,
+				25BA713B1F97D53A0023BED8 /* SQLiteTests iOS.xctest */,
+				25BA713D1F97D53A0023BED8 /* SQLite.framework */,
+				25BA713F1F97D53A0023BED8 /* SQLiteTests Mac.xctest */,
+				25BA71411F97D53A0023BED8 /* SQLite.framework */,
+				25BA71431F97D53A0023BED8 /* SQLiteTests tvOS.xctest */,
+				25BA71451F97D53A0023BED8 /* SQLite.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25BA71461F97D5470023BED8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +243,12 @@
 				256BFD831F9176E200D060B4 /* Sources */,
 				256BFD841F9176E200D060B4 /* Frameworks */,
 				256BFD851F9176E200D060B4 /* Resources */,
+				25BA714C1F97D54B0023BED8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				25BA714B1F97D54B0023BED8 /* PBXTargetDependency */,
 			);
 			name = "ReBUC Ramses";
 			productName = "ReBUC Ramses";
@@ -218,6 +328,12 @@
 			mainGroup = 256BFD7E1F9176E200D060B4;
 			productRefGroup = 256BFD881F9176E300D060B4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 25BA712F1F97D53A0023BED8 /* Products */;
+					ProjectRef = 25BA712E1F97D53A0023BED8 /* SQLite.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				256BFD861F9176E200D060B4 /* ReBUC Ramses */,
@@ -226,6 +342,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		25BA71391F97D53A0023BED8 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 25BA71381F97D53A0023BED8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		25BA713B1F97D53A0023BED8 /* SQLiteTests iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests iOS.xctest";
+			remoteRef = 25BA713A1F97D53A0023BED8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		25BA713D1F97D53A0023BED8 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 25BA713C1F97D53A0023BED8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		25BA713F1F97D53A0023BED8 /* SQLiteTests Mac.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests Mac.xctest";
+			remoteRef = 25BA713E1F97D53A0023BED8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		25BA71411F97D53A0023BED8 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 25BA71401F97D53A0023BED8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		25BA71431F97D53A0023BED8 /* SQLiteTests tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests tvOS.xctest";
+			remoteRef = 25BA71421F97D53A0023BED8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		25BA71451F97D53A0023BED8 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 25BA71441F97D53A0023BED8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		256BFD851F9176E200D060B4 /* Resources */ = {
@@ -259,8 +427,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				256BFD8D1F9176E300D060B4 /* ViewController.swift in Sources */,
 				256BFD8B1F9176E300D060B4 /* AppDelegate.swift in Sources */,
+				2587E3451F9EA8AD0013328C /* UniverCrearTicketsViewController.swift in Sources */,
+				25BA71501F9804570023BED8 /* RegistroViewController.swift in Sources */,
+				2587E34F1F9EC62E0013328C /* UniverPerfilViewController.swift in Sources */,
+				25BA714E1F97D7790023BED8 /* InicioDeSesionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +463,11 @@
 			isa = PBXTargetDependency;
 			target = 256BFD861F9176E200D060B4 /* ReBUC Ramses */;
 			targetProxy = 256BFDA71F9176E300D060B4 /* PBXContainerItemProxy */;
+		};
+		25BA714B1F97D54B0023BED8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SQLite iOS";
+			targetProxy = 25BA714A1F97D54B0023BED8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -425,6 +601,7 @@
 		256BFDB01F9176E300D060B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6VKPMZ9YA7;
@@ -440,6 +617,7 @@
 		256BFDB11F9176E300D060B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6VKPMZ9YA7;
