@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		254B3A031FA7E3B000B8E965 /* UniverVerTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254B3A021FA7E3B000B8E965 /* UniverVerTicketsViewController.swift */; };
+		254B3A061FA8002800B8E965 /* UniverComentarTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254B3A051FA8002800B8E965 /* UniverComentarTicketsViewController.swift */; };
 		256BFD8B1F9176E300D060B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256BFD8A1F9176E300D060B4 /* AppDelegate.swift */; };
 		256BFD901F9176E300D060B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 256BFD8E1F9176E300D060B4 /* Main.storyboard */; };
 		256BFD921F9176E300D060B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 256BFD911F9176E300D060B4 /* Assets.xcassets */; };
@@ -110,6 +112,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		254B3A021FA7E3B000B8E965 /* UniverVerTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniverVerTicketsViewController.swift; sourceTree = "<group>"; };
+		254B3A051FA8002800B8E965 /* UniverComentarTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniverComentarTicketsViewController.swift; sourceTree = "<group>"; };
 		256BFD871F9176E300D060B4 /* ReBUC Ramses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReBUC Ramses.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		256BFD8A1F9176E300D060B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		256BFD8F1F9176E300D060B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -185,6 +189,8 @@
 				25BA714D1F97D7790023BED8 /* InicioDeSesionViewController.swift */,
 				25BA714F1F9804570023BED8 /* RegistroViewController.swift */,
 				2587E3441F9EA8AD0013328C /* UniverCrearTicketsViewController.swift */,
+				254B3A021FA7E3B000B8E965 /* UniverVerTicketsViewController.swift */,
+				254B3A051FA8002800B8E965 /* UniverComentarTicketsViewController.swift */,
 				2587E34E1F9EC62E0013328C /* UniverPerfilViewController.swift */,
 				256BFD8E1F9176E300D060B4 /* Main.storyboard */,
 				256BFD911F9176E300D060B4 /* Assets.xcassets */,
@@ -430,6 +436,8 @@
 				256BFD8B1F9176E300D060B4 /* AppDelegate.swift in Sources */,
 				2587E3451F9EA8AD0013328C /* UniverCrearTicketsViewController.swift in Sources */,
 				25BA71501F9804570023BED8 /* RegistroViewController.swift in Sources */,
+				254B3A061FA8002800B8E965 /* UniverComentarTicketsViewController.swift in Sources */,
+				254B3A031FA7E3B000B8E965 /* UniverVerTicketsViewController.swift in Sources */,
 				2587E34F1F9EC62E0013328C /* UniverPerfilViewController.swift in Sources */,
 				25BA714E1F97D7790023BED8 /* InicioDeSesionViewController.swift in Sources */,
 			);

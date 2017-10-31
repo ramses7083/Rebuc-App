@@ -81,7 +81,7 @@ class UniverCrearTicketsViewController: UIViewController {
         fechaActual = formatter.string(from: date)
         
         // Guardar el ticket
-        let registrarTicket = self.ticketsTabla.insert(self.idUsuarioExp <- self.idUsuario!, self.fechaTicketExp <- self.fechaActual!, consultaExp <- self.consultaTextField.text!, estatusExp <- "Abierto", calificacionExp <- 0)
+        let registrarTicket = self.ticketsTabla.insert(self.idUsuarioExp <- self.idUsuario!, self.fechaTicketExp <- self.fechaActual!, consultaExp <- self.consultaTextField.text!, estatusExp <- "Nuevo", calificacionExp <- 0)
         
         do {
             try self.database.run(registrarTicket)
