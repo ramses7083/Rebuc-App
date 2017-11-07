@@ -1,37 +1,44 @@
 //
-//  UniverComentarTicketsViewController.swift
+//  BibliotecarioResponderTicketViewController.swift
 //  ReBUC Ramses
 //
-//  Created by Ramses Miramontes Meza on 30/10/17.
+//  Created by Ramses Miramontes Meza on 02/11/17.
 //  Copyright © 2017 Ramses Miramontes Meza. All rights reserved.
 //
 
 import UIKit
 import SQLite
 
-class UniverComentarTicketsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class BibliotecarioResponderTicketViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
     // Objeto que se utilizará
     @IBOutlet var respuestasTableView: UITableView!
     @IBOutlet var descripcionLabel: UILabel!
     @IBOutlet var preguntaTextField: UITextField!
+    @IBOutlet var estatusPickerView: UIPickerView!
+    
+    // Tabla de Tickets
+    let ticketsTabla = Table("Tickets")
+    let idTicketExp = Expression<Int>("id_ticket")
+    let estatusExp = Expression<String>("estatus")
     
     // Tabla de respuestas de tickets
     var database: Connection!
     let historialTicketsTabla = Table("Historial_tickets")
     let idHistorialTicketExp = Expression<Int>("id_historial_ticket")
-    let idTicketExp = Expression<Int>("id_ticket")
     let idRespuestaUsuarioExp = Expression<Int>("id_respuesta_usuario")
     let fechaRespuestaExp = Expression<String>("fecha_respuesta")
     let respuestaExp = Expression<String>("respuesta")
     
     // Variables a utilizar
+    var pickerData: [String] = ["En proceso", "Cerrado"]
     var idUsuario : Int!
     var idTicket :Int!
     var descripcion: String!
+    var estatus: String!
     var fechaActual : String!
     var respuestas = [String]()
     var fechas = [String]()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -46,8 +53,11 @@ class UniverComentarTicketsViewController: UIViewController, UITableViewDataSour
             print(error)
         }
         
-        // Cargar la descripcion en el label
+        // Actualizar el valor de la etiqueta y el picker view
         descripcionLabel.text = descripcion
+        if estatus != "En proceso" {
+            estatusPickerView.selectRow(1, inComponent: 0, animated: true)
+        }
         
         // Convocar al método para obtener los comentarios de los tickets
         obtenerComentarios()
@@ -97,8 +107,36 @@ class UniverComentarTicketsViewController: UIViewController, UITableViewDataSour
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
     }
-
-    @IBAction func enviarPregunta(_ sender: UIButton) {
+    
+    // MARK: - Table view data source
+    // Número de columnas
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    // Número de filas de los datos
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerData.count
+    }
+    
+    // Datos que contendrá cada opción
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerData[row]
+    }
+    
+    // Actualizar estatus del ticket
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        let ticket = self.ticketsTabla.filter(self.idTicketExp == self.idTicket!)
+        let estatusActualizado = ticket.update(self.estatusExp <- pickerData[row])
+        do {
+            try self.database.run(estatusActualizado)
+            print("Estatus actualizado")
+        } catch {
+            print(error)
+        }
+    }
+    
+    @IBAction func enviarRespuesta(_ sender: UIButton) {
         // Crear la tabla de historial tickets
         let crearTabla = self.historialTicketsTabla.create { (tabla) in
             tabla.column(self.idHistorialTicketExp, primaryKey: true)
@@ -143,7 +181,7 @@ class UniverComentarTicketsViewController: UIViewController, UITableViewDataSour
             print(error)
         }
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -96,6 +96,9 @@ class InicioDeSesionViewController: UIViewController {
             if idTipoUsuario == 1 {
                 self.performSegue(withIdentifier: "universitarioSegue", sender: self)
             }
+            if idTipoUsuario == 2 {
+                self.performSegue(withIdentifier: "bibliotecarioSegue", sender: self)
+            }
             
         } else {
             print("Error en los datos")
@@ -114,6 +117,8 @@ class InicioDeSesionViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "universitarioSegue" {
+        }
+        if segue.identifier == "bibliotecarioSegue" {
         }
     }
     /*

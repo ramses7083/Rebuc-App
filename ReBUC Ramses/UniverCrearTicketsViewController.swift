@@ -18,10 +18,11 @@ class UniverCrearTicketsViewController: UIViewController {
     let sesionTabla = Table("Sesion")
     let idUsuarioSesExp = Expression<Int>("id_usuario")
     
-    // Table de Tickets
+    // Tabla de Tickets
     let ticketsTabla = Table("Tickets")
     let idTicketExp = Expression<Int>("id_ticket")
     let idUsuarioExp = Expression<Int>("id_usuario")
+    let idUsuarioBibliotecarioExp = Expression<Int>("id_usuario_bibliotecario")
     let fechaTicketExp = Expression<String>("fecha_ticket")
     let consultaExp = Expression<String>("consulta")
     let estatusExp = Expression<String>("estatus")
@@ -61,6 +62,7 @@ class UniverCrearTicketsViewController: UIViewController {
         let crearTabla = self.ticketsTabla.create { (tabla) in
             tabla.column(self.idTicketExp, primaryKey: true)
             tabla.column(self.idUsuarioExp)
+            tabla.column(self.idUsuarioBibliotecarioExp)
             tabla.column(self.fechaTicketExp)
             tabla.column(self.consultaExp)
             tabla.column(self.estatusExp)
@@ -81,7 +83,7 @@ class UniverCrearTicketsViewController: UIViewController {
         fechaActual = formatter.string(from: date)
         
         // Guardar el ticket
-        let registrarTicket = self.ticketsTabla.insert(self.idUsuarioExp <- self.idUsuario!, self.fechaTicketExp <- self.fechaActual!, consultaExp <- self.consultaTextField.text!, estatusExp <- "Nuevo", calificacionExp <- 0)
+        let registrarTicket = self.ticketsTabla.insert(self.idUsuarioExp <- self.idUsuario!, self.fechaTicketExp <- self.fechaActual!, consultaExp <- self.consultaTextField.text!, estatusExp <- "Nuevo", calificacionExp <- 0, self.idUsuarioBibliotecarioExp <- 0)
         
         do {
             try self.database.run(registrarTicket)
