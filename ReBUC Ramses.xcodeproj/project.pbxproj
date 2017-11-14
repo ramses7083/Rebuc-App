@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		250C19AE1FB3D1CB00193057 /* ResponsableVerTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250C19AD1FB3D1CB00193057 /* ResponsableVerTicketsViewController.swift */; };
+		2520ACAD1FBA15B000F4F08C /* ResponsableResponderTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2520ACAC1FBA15B000F4F08C /* ResponsableResponderTicketViewController.swift */; };
+		2520ACB51FBA79E100F4F08C /* ResponsablePerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2520ACB41FBA79E100F4F08C /* ResponsablePerfilViewController.swift */; };
 		253CAB3F1FB136FE00A11B2A /* BibliotecarioPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253CAB3E1FB136FE00A11B2A /* BibliotecarioPerfilViewController.swift */; };
 		254B3A031FA7E3B000B8E965 /* UniverVerTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254B3A021FA7E3B000B8E965 /* UniverVerTicketsViewController.swift */; };
 		254B3A061FA8002800B8E965 /* UniverComentarTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254B3A051FA8002800B8E965 /* UniverComentarTicketsViewController.swift */; };
@@ -115,6 +118,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		250C19AD1FB3D1CB00193057 /* ResponsableVerTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponsableVerTicketsViewController.swift; sourceTree = "<group>"; };
+		2520ACAC1FBA15B000F4F08C /* ResponsableResponderTicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponsableResponderTicketViewController.swift; sourceTree = "<group>"; };
+		2520ACB41FBA79E100F4F08C /* ResponsablePerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponsablePerfilViewController.swift; sourceTree = "<group>"; };
 		253CAB3E1FB136FE00A11B2A /* BibliotecarioPerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibliotecarioPerfilViewController.swift; sourceTree = "<group>"; };
 		254B3A021FA7E3B000B8E965 /* UniverVerTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniverVerTicketsViewController.swift; sourceTree = "<group>"; };
 		254B3A051FA8002800B8E965 /* UniverComentarTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniverComentarTicketsViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +172,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		250C19A21FB3CE7A00193057 /* Universitario */ = {
+			isa = PBXGroup;
+			children = (
+				2587E3441F9EA8AD0013328C /* UniverCrearTicketsViewController.swift */,
+				254B3A021FA7E3B000B8E965 /* UniverVerTicketsViewController.swift */,
+				254B3A051FA8002800B8E965 /* UniverComentarTicketsViewController.swift */,
+				2587E34E1F9EC62E0013328C /* UniverPerfilViewController.swift */,
+			);
+			path = Universitario;
+			sourceTree = "<group>";
+		};
+		250C19A91FB3CE9800193057 /* Bibliotecario */ = {
+			isa = PBXGroup;
+			children = (
+				257D1F8F1FABE42B00F215B8 /* BibliotecarioVerTicketsViewController.swift */,
+				257D1F991FABFC1200F215B8 /* BibliotecarioResponderTicketViewController.swift */,
+				253CAB3E1FB136FE00A11B2A /* BibliotecarioPerfilViewController.swift */,
+			);
+			path = Bibliotecario;
+			sourceTree = "<group>";
+		};
+		250C19AC1FB3D19500193057 /* Responsable */ = {
+			isa = PBXGroup;
+			children = (
+				250C19AD1FB3D1CB00193057 /* ResponsableVerTicketsViewController.swift */,
+				2520ACAC1FBA15B000F4F08C /* ResponsableResponderTicketViewController.swift */,
+				2520ACB41FBA79E100F4F08C /* ResponsablePerfilViewController.swift */,
+			);
+			path = Responsable;
+			sourceTree = "<group>";
+		};
 		256BFD7E1F9176E200D060B4 = {
 			isa = PBXGroup;
 			children = (
@@ -194,13 +231,9 @@
 				256BFD8A1F9176E300D060B4 /* AppDelegate.swift */,
 				25BA714D1F97D7790023BED8 /* InicioDeSesionViewController.swift */,
 				25BA714F1F9804570023BED8 /* RegistroViewController.swift */,
-				2587E3441F9EA8AD0013328C /* UniverCrearTicketsViewController.swift */,
-				254B3A021FA7E3B000B8E965 /* UniverVerTicketsViewController.swift */,
-				254B3A051FA8002800B8E965 /* UniverComentarTicketsViewController.swift */,
-				2587E34E1F9EC62E0013328C /* UniverPerfilViewController.swift */,
-				257D1F8F1FABE42B00F215B8 /* BibliotecarioVerTicketsViewController.swift */,
-				257D1F991FABFC1200F215B8 /* BibliotecarioResponderTicketViewController.swift */,
-				253CAB3E1FB136FE00A11B2A /* BibliotecarioPerfilViewController.swift */,
+				250C19A21FB3CE7A00193057 /* Universitario */,
+				250C19AC1FB3D19500193057 /* Responsable */,
+				250C19A91FB3CE9800193057 /* Bibliotecario */,
 				256BFD8E1F9176E300D060B4 /* Main.storyboard */,
 				256BFD911F9176E300D060B4 /* Assets.xcassets */,
 				256BFD931F9176E300D060B4 /* LaunchScreen.storyboard */,
@@ -446,9 +479,12 @@
 				253CAB3F1FB136FE00A11B2A /* BibliotecarioPerfilViewController.swift in Sources */,
 				257D1F9A1FABFC1200F215B8 /* BibliotecarioResponderTicketViewController.swift in Sources */,
 				257D1F901FABE42B00F215B8 /* BibliotecarioVerTicketsViewController.swift in Sources */,
+				2520ACAD1FBA15B000F4F08C /* ResponsableResponderTicketViewController.swift in Sources */,
 				2587E3451F9EA8AD0013328C /* UniverCrearTicketsViewController.swift in Sources */,
 				25BA71501F9804570023BED8 /* RegistroViewController.swift in Sources */,
 				254B3A061FA8002800B8E965 /* UniverComentarTicketsViewController.swift in Sources */,
+				2520ACB51FBA79E100F4F08C /* ResponsablePerfilViewController.swift in Sources */,
+				250C19AE1FB3D1CB00193057 /* ResponsableVerTicketsViewController.swift in Sources */,
 				254B3A031FA7E3B000B8E965 /* UniverVerTicketsViewController.swift in Sources */,
 				2587E34F1F9EC62E0013328C /* UniverPerfilViewController.swift in Sources */,
 				25BA714E1F97D7790023BED8 /* InicioDeSesionViewController.swift in Sources */,

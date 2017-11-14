@@ -62,7 +62,7 @@ class RegistroViewController: UIViewController {
     }
 
     @IBAction func registrarUsuario(_ sender: UIButton) {
-        let registrarUsuario = self.usuariosTabla.insert(self.emailExp <- emailTextField.text!, self.contrasenaExp <- contrasenaTextField.text!, self.nombreUsuarioExp <- nombreTextField.text!,self.apellido_usuarioExp <- apellidoTextField.text!, self.dependenciaExp <- dependenciaTextField.text!, idTipoUsuarioExp <- 1)
+        let registrarUsuario = self.usuariosTabla.insert(self.emailExp <- emailTextField.text!, self.contrasenaExp <- contrasenaTextField.text!, self.nombreUsuarioExp <- nombreTextField.text!,self.apellido_usuarioExp <- apellidoTextField.text!, self.dependenciaExp <- dependenciaTextField.text!, idTipoUsuarioExp <- 2)
         
         do {
             try self.database.run(registrarUsuario)
