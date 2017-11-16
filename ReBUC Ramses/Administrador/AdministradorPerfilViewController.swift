@@ -1,15 +1,15 @@
 //
-//  ResponsablePerfilViewController.swift
+//  AdministradorPerfilViewController.swift
 //  ReBUC Ramses
 //
-//  Created by Ramses Miramontes Meza on 13/11/17.
+//  Created by Ramses Miramontes Meza on 15/11/17.
 //  Copyright © 2017 Ramses Miramontes Meza. All rights reserved.
 //
 
 import UIKit
 import SQLite
 
-class ResponsablePerfilViewController: UIViewController {
+class AdministradorPerfilViewController: UIViewController {
     // Objetos que se utilizarán en este controlador
     @IBOutlet var nombreTextField: UITextField!
     @IBOutlet var apellidosTextField: UITextField!
@@ -30,12 +30,10 @@ class ResponsablePerfilViewController: UIViewController {
     // Variable a utilizar
     var idUsuario : Int!
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
         // Do any additional setup after loading the view.
         // Obtener la ruta del archivo usuarios.sqlite3
         do {
@@ -81,7 +79,7 @@ class ResponsablePerfilViewController: UIViewController {
             print(error)
         }
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -23,6 +23,11 @@
 		257D1F9A1FABFC1200F215B8 /* BibliotecarioResponderTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257D1F991FABFC1200F215B8 /* BibliotecarioResponderTicketViewController.swift */; };
 		2587E3451F9EA8AD0013328C /* UniverCrearTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2587E3441F9EA8AD0013328C /* UniverCrearTicketsViewController.swift */; };
 		2587E34F1F9EC62E0013328C /* UniverPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2587E34E1F9EC62E0013328C /* UniverPerfilViewController.swift */; };
+		25B8A7EB1FBCA47F004D254C /* ResponsableUsuariosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B8A7EA1FBCA47F004D254C /* ResponsableUsuariosViewController.swift */; };
+		25B8A7F31FBCD04B004D254C /* AdministradorVerTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B8A7F21FBCD04B004D254C /* AdministradorVerTicketsViewController.swift */; };
+		25B8A7F61FBCD65D004D254C /* AdministradorResponderTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B8A7F51FBCD65D004D254C /* AdministradorResponderTicketViewController.swift */; };
+		25B8A7F81FBD0352004D254C /* AdministradorUsuariosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B8A7F71FBD0352004D254C /* AdministradorUsuariosViewController.swift */; };
+		25B8A7FA1FBD0BBE004D254C /* AdministradorPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B8A7F91FBD0BBE004D254C /* AdministradorPerfilViewController.swift */; };
 		25BA71471F97D5470023BED8 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25BA71391F97D53A0023BED8 /* SQLite.framework */; };
 		25BA71481F97D54B0023BED8 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25BA71391F97D53A0023BED8 /* SQLite.framework */; };
 		25BA71491F97D54B0023BED8 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 25BA71391F97D53A0023BED8 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -140,6 +145,11 @@
 		257D1F991FABFC1200F215B8 /* BibliotecarioResponderTicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibliotecarioResponderTicketViewController.swift; sourceTree = "<group>"; };
 		2587E3441F9EA8AD0013328C /* UniverCrearTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniverCrearTicketsViewController.swift; sourceTree = "<group>"; };
 		2587E34E1F9EC62E0013328C /* UniverPerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniverPerfilViewController.swift; sourceTree = "<group>"; };
+		25B8A7EA1FBCA47F004D254C /* ResponsableUsuariosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponsableUsuariosViewController.swift; sourceTree = "<group>"; };
+		25B8A7F21FBCD04B004D254C /* AdministradorVerTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdministradorVerTicketsViewController.swift; sourceTree = "<group>"; };
+		25B8A7F51FBCD65D004D254C /* AdministradorResponderTicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdministradorResponderTicketViewController.swift; sourceTree = "<group>"; };
+		25B8A7F71FBD0352004D254C /* AdministradorUsuariosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdministradorUsuariosViewController.swift; sourceTree = "<group>"; };
+		25B8A7F91FBD0BBE004D254C /* AdministradorPerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdministradorPerfilViewController.swift; sourceTree = "<group>"; };
 		25BA712E1F97D53A0023BED8 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
 		25BA714D1F97D7790023BED8 /* InicioDeSesionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioDeSesionViewController.swift; sourceTree = "<group>"; };
 		25BA714F1F9804570023BED8 /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
@@ -199,6 +209,7 @@
 				250C19AD1FB3D1CB00193057 /* ResponsableVerTicketsViewController.swift */,
 				2520ACAC1FBA15B000F4F08C /* ResponsableResponderTicketViewController.swift */,
 				2520ACB41FBA79E100F4F08C /* ResponsablePerfilViewController.swift */,
+				25B8A7EA1FBCA47F004D254C /* ResponsableUsuariosViewController.swift */,
 			);
 			path = Responsable;
 			sourceTree = "<group>";
@@ -231,6 +242,7 @@
 				256BFD8A1F9176E300D060B4 /* AppDelegate.swift */,
 				25BA714D1F97D7790023BED8 /* InicioDeSesionViewController.swift */,
 				25BA714F1F9804570023BED8 /* RegistroViewController.swift */,
+				25B8A7F41FBCD05D004D254C /* Administrador */,
 				250C19A21FB3CE7A00193057 /* Universitario */,
 				250C19AC1FB3D19500193057 /* Responsable */,
 				250C19A91FB3CE9800193057 /* Bibliotecario */,
@@ -258,6 +270,17 @@
 				256BFDAC1F9176E300D060B4 /* Info.plist */,
 			);
 			path = "ReBUC RamsesUITests";
+			sourceTree = "<group>";
+		};
+		25B8A7F41FBCD05D004D254C /* Administrador */ = {
+			isa = PBXGroup;
+			children = (
+				25B8A7F21FBCD04B004D254C /* AdministradorVerTicketsViewController.swift */,
+				25B8A7F51FBCD65D004D254C /* AdministradorResponderTicketViewController.swift */,
+				25B8A7F71FBD0352004D254C /* AdministradorUsuariosViewController.swift */,
+				25B8A7F91FBD0BBE004D254C /* AdministradorPerfilViewController.swift */,
+			);
+			path = Administrador;
 			sourceTree = "<group>";
 		};
 		25BA712F1F97D53A0023BED8 /* Products */ = {
@@ -476,16 +499,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				256BFD8B1F9176E300D060B4 /* AppDelegate.swift in Sources */,
+				25B8A7F61FBCD65D004D254C /* AdministradorResponderTicketViewController.swift in Sources */,
 				253CAB3F1FB136FE00A11B2A /* BibliotecarioPerfilViewController.swift in Sources */,
 				257D1F9A1FABFC1200F215B8 /* BibliotecarioResponderTicketViewController.swift in Sources */,
 				257D1F901FABE42B00F215B8 /* BibliotecarioVerTicketsViewController.swift in Sources */,
+				25B8A7EB1FBCA47F004D254C /* ResponsableUsuariosViewController.swift in Sources */,
 				2520ACAD1FBA15B000F4F08C /* ResponsableResponderTicketViewController.swift in Sources */,
 				2587E3451F9EA8AD0013328C /* UniverCrearTicketsViewController.swift in Sources */,
 				25BA71501F9804570023BED8 /* RegistroViewController.swift in Sources */,
 				254B3A061FA8002800B8E965 /* UniverComentarTicketsViewController.swift in Sources */,
 				2520ACB51FBA79E100F4F08C /* ResponsablePerfilViewController.swift in Sources */,
+				25B8A7F31FBCD04B004D254C /* AdministradorVerTicketsViewController.swift in Sources */,
 				250C19AE1FB3D1CB00193057 /* ResponsableVerTicketsViewController.swift in Sources */,
 				254B3A031FA7E3B000B8E965 /* UniverVerTicketsViewController.swift in Sources */,
+				25B8A7FA1FBD0BBE004D254C /* AdministradorPerfilViewController.swift in Sources */,
+				25B8A7F81FBD0352004D254C /* AdministradorUsuariosViewController.swift in Sources */,
 				2587E34F1F9EC62E0013328C /* UniverPerfilViewController.swift in Sources */,
 				25BA714E1F97D7790023BED8 /* InicioDeSesionViewController.swift in Sources */,
 			);

@@ -1,15 +1,15 @@
 //
-//  ResponsableResponderTicketViewController.swift
+//  AdministradorResponderTicketViewController.swift
 //  ReBUC Ramses
 //
-//  Created by Ramses Miramontes Meza on 13/11/17.
+//  Created by Ramses Miramontes Meza on 15/11/17.
 //  Copyright © 2017 Ramses Miramontes Meza. All rights reserved.
 //
 
 import UIKit
 import SQLite
 
-class ResponsableResponderTicketViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
+class AdministradorResponderTicketViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
     // Objeto que se utilizará
     @IBOutlet var respuestasTableView: UITableView!
     @IBOutlet var descripcionLabel: UILabel!
@@ -50,10 +50,12 @@ class ResponsableResponderTicketViewController: UIViewController, UITableViewDat
     var fechaActual : String!
     var respuestas = [String]()
     var fechas = [String]()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Do any additional setup after loading the view.
+        
         // Do any additional setup after loading the view.
         // Obtener la ruta del archivo usuarios.sqlite3
         do {
@@ -64,7 +66,7 @@ class ResponsableResponderTicketViewController: UIViewController, UITableViewDat
         } catch {
             print(error)
         }
-    
+        
         // Obtener los datos de los bibliotecarios y almacenarlos en arreglos
         do {
             let usuarios = self.usuariosTabla.filter(self.idTipoUsuarioExp == 2)
